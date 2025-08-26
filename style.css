@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&family=Yarndings+20&display=swap");
+
+.yarndings-20-regular {
+  font-family: "Yarndings 20", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tangerine-bold {
+  font-family: "Tangerine", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 80vw;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+h1,
+h2,
+.title {
+  font-family: "Tangerine";
+}
+
+h3 {
+  font-family: "Yarndings 20";
+  font-size: 3rem;
+  letter-spacing: 1rem;
+  padding: 2rem 0;
+  color: blue;
+}
+
+.title {
+  font-size: 6rem;
+  color: black;
+  font-weight: bold;
+  text-shadow: 2px 3px 4px fuchsia;
+  width: 400px;
+  padding-bottom: 2rem;
+}
+h1 {
+  font-size: 3.5rem;
+  margin: 10px 0;
+  text-shadow: 1px 2px 4px #dcf6ff;
+}
+
+h2 {
+  font-size: 3rem;
+  color: black;
+}
+html {
+  background-color: rgb(185, 238, 255);
+}
+
+form * {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.1rem;
+  letter-spacing: -1px;
+}
+
+label {
+  padding-right: 1rem;
+}
+#svar {
+  width: 6rem;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 0.3rem;
+  height: 2rem;
+  background-color: #d7f5ff;
+  color: black;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+#submitButton {
+  height: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin: 20px 0px;
+  color: fuchsia;
+  background-color: #f6e2ff;
+  border: 1px solid #ffffff;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  box-shadow: 2px 4px 6px rgba(0, 0, 255, 0.312);
+}
+
+#submitButton:hover {
+  cursor: pointer;
+  background-color: rgb(0, 0, 0);
+  color: blue;
+  box-shadow: 1px 1px 20px fuchsia;
+}
+.random-number_wrapper {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.random-number_wrapper h1 {
+  font-size: 1.2rem;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: normal;
+  letter-spacing: -1px;
+}
+
+p {
+  font-size: 1rem;
+  font-family: Courier, monospace;
+  font-weight: normal;
+  color: blue;
+  font-weight: 1000;
+  letter-spacing: -1px;
+  padding: 1rem 0;
+}
+
+#random-number {
+  background-color: #d7f5ff;
+  padding-left: 0.8rem;
+  padding-right: 1.2rem;
+  padding-bottom: 0.2rem;
+  border-radius: 2000px;
+  box-shadow: 0px 0px 14px blue inset;
+}
+
+#cat {
+  width: 200px;
+  margin-top: -8rem;
+  filter: hue-rotate(260deg) brightness(130%) saturate(200%) drop-shadow(20px 10px 10px rgba(0, 0, 255, 0.23));
+}
+
+#wow {
+  font-size: 2.5rem;
+  color: blue;
+  text-shadow: 1px 2px 4px rgb(255, 255, 255);
+}
+
+.result_wrapper {
+  display: flex;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+}
