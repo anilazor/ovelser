@@ -13,7 +13,7 @@ img {
 body {
   max-width: 80vw;
   margin: 0 auto;
-  padding: 32rem 10rem 1rem 2rem;
+  padding: 29rem 10rem 2rem 2rem;
 }
 
 .content {
@@ -79,8 +79,8 @@ a {
 
 .list {
   background-color: rgba(240, 255, 255, 0.939);
-  width: 94%;
-  padding: 0.4rem 0 0.6rem 0.8rem;
+  width: 98%;
+  padding: 1rem 1.4rem;
   border-radius: 6px;
   box-shadow: inset 0 -3em 3em rgba(255, 53, 188, 0.3), 0 0 0 2px white, 0.3em 0.3em 1.9em rgba(79, 255, 158, 0.6);
 }
