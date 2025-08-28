@@ -96,6 +96,17 @@ p {
   font-style: oblique;
 }
 
+.objective {
+  font-weight: 500;
+  font-size: 0.9rem;
+  font-style: normal;
+  text-shadow: none;
+  max-width: 600px;
+  letter-spacing: 0.2px;
+  padding-left: 0;
+  margin-bottom: 1rem;
+}
+
 .hidden {
   display: none;
 }
