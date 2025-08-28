@@ -27,7 +27,7 @@ function startSpil() {
   btn1.classList.remove("hidden");
   btn2.classList.remove("hidden");
   btn3.classList.remove("hidden");
-  computerGuess.classList.remove("fade-in"); // Reset animation
+  computerGuess.classList.remove("fade-in");
   void computerGuess.offsetWidth; // Force reflow
   computerGuess.classList.add("fade-in");
 }
@@ -56,6 +56,7 @@ function rigtig() {
   succes.classList.remove("hidden");
   computerGuess.classList.add("glow");
   computerGuess.classList.add("scale-up");
+  loader.classList.add("speed");
   btn1.classList.add("hidden");
   btn2.classList.add("hidden");
   btn3.classList.add("hidden");

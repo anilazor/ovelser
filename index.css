@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+  max-width: 80vw;
+  margin: 0 auto;
+  padding: 32rem 10rem 1rem 2rem;
+}
+
+.content {
+  position: fixed;
+  z-index: 2;
+  margin: 0 auto;
+  justify-content: center;
+}
+.bg-img {
+  background-image: url(imgs/forestlake.jpg);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(3px) brightness(300%) hue-rotate(110deg);
+  opacity: 20%;
+  box-shadow: inset 20px 20px 200px rgb(0, 20, 36);
+}
+
+.heading {
+  color: rgba(255, 255, 255, 0.939);
+  font-size: 2.5rem;
+  text-shadow: 4px 4px 10px white, 4px 2px 20px rgba(255, 0, 208, 0.679), 4px 6px 20px rgb(255, 255, 255), 1px 6px 10px rgb(106, 255, 200);
+  text-align: center;
+  filter: blur(1px);
+}
+h2 {
+  color: #ffffff;
+  text-shadow: 1px -1px 4px rgb(255, 255, 255), 1px 1px 8px rgb(20, 255, 122), 2px 2px 14px white, 3px 3px 20px rgb(255, 0, 153);
+  font-family: cursive;
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+li,
+a {
+  color: #244050;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 0.8rem;
+}
+
+ul {
+  line-height: 1.8;
+}
+
+li {
+  list-style-type: georgian;
+  margin-left: 1rem;
+}
+
+a {
+  text-underline-offset: 4px;
+  text-decoration: #244050 underline 0.5px;
+}
+
+.list {
+  background-color: rgba(240, 255, 255, 0.939);
+  width: 94%;
+  padding: 0.4rem 0 0.6rem 0.8rem;
+  border-radius: 6px;
+  box-shadow: inset 0 -3em 3em rgba(255, 53, 188, 0.3), 0 0 0 2px white, 0.3em 0.3em 1.9em rgba(79, 255, 158, 0.6);
+}
