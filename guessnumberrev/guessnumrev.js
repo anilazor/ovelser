@@ -3,7 +3,7 @@ const btnStart = document.querySelector("#start-btn");
 const btn1 = document.querySelector("#btn1");
 const btn2 = document.querySelector("#btn2");
 const btn3 = document.querySelector("#btn3");
-const sucess = document.querySelector("#sucess");
+const success = document.querySelector("#success");
 const loader = document.querySelector("loader");
 
 btnStart.addEventListener("click", startSpil);
@@ -21,7 +21,7 @@ function startSpil() {
   lowNum = 0;
   highNum = 100;
   makeComputerGuess();
-  succes.classList.add("hidden");
+  success.classList.add("hidden");
   computerGuess.classList.remove("glow");
   computerGuess.classList.remove("scale-up");
   btn1.classList.remove("hidden");
@@ -52,11 +52,10 @@ function forHoej() {
 }
 
 function rigtig() {
-  succes.innerText = "Succes!(ෆ˙ᵕ˙ෆ)♡";
-  succes.classList.remove("hidden");
+  success.innerText = "Sucess!(ෆ˙ᵕ˙ෆ)♡";
+  success.classList.remove("hidden");
   computerGuess.classList.add("glow");
   computerGuess.classList.add("scale-up");
-  loader.classList.add("speed");
   btn1.classList.add("hidden");
   btn2.classList.add("hidden");
   btn3.classList.add("hidden");
