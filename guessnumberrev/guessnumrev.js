@@ -28,16 +28,16 @@ function startSpil() {
   btn2.classList.remove("hidden");
   btn3.classList.remove("hidden");
   computerGuess.classList.remove("fade-in");
-  void computerGuess.offsetWidth; // Force reflow
+  void computerGuess.offsetWidth;
   computerGuess.classList.add("fade-in");
 }
-// ...existing code...
+
 function makeComputerGuess() {
   guess = Math.round((highNum + lowNum) / 2);
   console.log(guess);
   computerGuess.innerText = guess;
-  computerGuess.classList.remove("fade-in"); // Reset animation
-  void computerGuess.offsetWidth; // Force reflow
+  computerGuess.classList.remove("fade-in");
+  void computerGuess.offsetWidth;
   computerGuess.classList.add("fade-in");
 }
 
