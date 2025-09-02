@@ -47,6 +47,7 @@ btnAll.addEventListener("click", klikAll);
 
 // Filter functions
 function klik1() {
+  console.log("Elbiler");
   showTheseVehicles(
     vehicles.filter(function (vehicle) {
       return vehicle.isElectric;
@@ -55,29 +56,37 @@ function klik1() {
 }
 
 function klik2() {
+  console.log("Biler med 2+ sæder");
   showTheseVehicles(
     vehicles.filter(function (vehicle) {
-      return vehicle.passengers === 2;
+      return vehicle.passengers >= 2;
     })
   );
 }
 
 function klik3() {
+  console.log("Jonas' elektriske fartøjer");
   showTheseVehicles(
     vehicles.filter(function (vehicle) {
-      return vehicle.ownedBy === "Jonas";
+      if (vehicle.isElectric) {
+        return vehicle.ownedBy === "Jonas";
+      }
     })
   );
 }
 
 function klik4() {
+  console.log("rugbrødsbiler");
   showTheseVehicles(
     vehicles.filter(function (vehicle) {
-      return vehicle.fuel === "Rugbrød";
+      if (vehicle.passengers >= 1) {
+        return vehicle.fuel === "Rugbrød";
+      }
     })
   );
 }
 
 function klikAll() {
+  console.log("Alle biler");
   showTheseVehicles(vehicles);
 }
