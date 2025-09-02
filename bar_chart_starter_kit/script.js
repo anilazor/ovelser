@@ -19,3 +19,4 @@ function generateBar() {
     document.querySelector("li").remove();
   }
 }
+
