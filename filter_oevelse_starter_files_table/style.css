@@ -19,6 +19,7 @@ caption {
 thead,
 tfoot {
   background-color: rgb(255, 184, 243);
+  box-shadow: inset 2px 4px 10px white;
 }
 
 th,
