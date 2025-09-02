@@ -13,8 +13,8 @@ li {
   inline-size: 3ch;
   height: calc(var(--height) * 1px);
   background: color-mix(in hsl, rgb(255, 0, 247), rgb(140, 167, 255) calc(var(--height) * 1%));
-  box-shadow: inset 2px 4px 10px rgb(200, 238, 255), 1px 2px 6px rgb(54, 0, 189);
-  border-radius: 6px;
+  box-shadow: inset 2px 4px 10px rgb(200, 238, 255), 1px 2px 6px rgb(0, 0, 0);
+  border-radius: 10px;
 }
 
 * {
