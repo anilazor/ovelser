@@ -14,7 +14,7 @@ function generateBar() {
   console.log(bars);
   li.style.setProperty("--height", `${randoNum}`);
   list.appendChild(li);
-  if (barLength == 20) {
+  if (barLength == 21) {
     bars.shift();
     document.querySelector("li").remove();
   }
