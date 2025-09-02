@@ -1,40 +1,60 @@
+body {
+  background-image: url(8ff2f1550b5a3661c8ef1d5094818a47.jpg);
+}
+
 table {
-    border-collapse: collapse;
-    border: 2px solid rgb(140 140 140);
-    font-family: sans-serif;
-    font-size: 0.8rem;
-    letter-spacing: 1px;
+  border-collapse: collapse;
+  border: 0.5px solid rgb(65, 65, 65);
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
 }
 
 caption {
-    caption-side: bottom;
-    padding: 10px;
-    font-weight: bold;
+  caption-side: bottom;
+  padding: 10px;
+  font-weight: bold;
 }
 
 thead,
 tfoot {
-    background-color: rgb(228 240 245);
+  background-color: rgb(255, 184, 243);
 }
 
 th,
 td {
-    border: 1px solid rgb(160 160 160);
-    padding: 8px 10px;
+  border: 0.5px solid rgb(65, 65, 65);
+  padding: 8px 10px;
 }
 
 td:last-of-type {
-    text-align: center;
+  text-align: center;
 }
 
-tbody>tr:nth-of-type(even) {
-    background-color: rgb(237 238 242);
+tbody > tr:nth-of-type(even) {
+  background-color: rgb(255, 234, 251);
+  box-shadow: inset 4px 4px 10px rgb(255, 255, 255);
 }
 
 tfoot th {
-    text-align: right;
+  text-align: right;
 }
 
 tfoot td {
-    font-weight: bold;
+  font-weight: bold;
+}
+
+button {
+  background-color: rgb(255, 184, 243);
+  padding: 0.3rem 0.5rem;
+  border-radius: 10px;
+  box-shadow: inset 2px 4px 10px white;
+  border: 0.5px solid rgb(184, 178, 183);
+  margin-top: 1rem;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(255, 223, 250);
+  transition: all 0.25s ease-in-out;
 }

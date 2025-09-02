@@ -12,47 +12,72 @@ const vehicles = [
 ];
 const tbodyPointer = document.querySelector("tbody");
 
-// showTheseVehicles(vehicles);
+showTheseVehicles(vehicles);
 
 function showTheseVehicles(arr) {
+  tbodyPointer.innerHTML = "";
   arr.forEach((each) => {
     tbodyPointer.innerHTML += `<tr>
-  <td>${each.type}</td>
-  <td>${each.fuel}</td>
-  <td>${each.passengers}</td> 
-  <td>${each.stops}</td>
-  <td>${each.ownedBy}</td>
-  <td>${each.isElectric}</td>
-  <td>${each.isTandem}</td>
-</tr>`;
+      <td>${each.type}</td>
+      <td>${each.fuel ?? "No"}</td>
+      <td>${each.passengers}</td> 
+      <td>${each.stops ? each.stops.join(", ") : "None"}</td>
+      <td>${each.ownedBy ?? "None"}</td>
+      <td>${each.isElectric === true ? "Yes" : "No"}</td>
+      <td>${each.isTandem === true ? "Yes" : "No"}</td>
+    </tr>`;
   });
 }
 
-//Vis eldrevne fartøjer
-function isElec(vehicle) {
-  if (vehicle.isElectric) {
-    return true;
-  }
+// Button event listeners
+const btn1 = document.querySelector(".button1");
+btn1.addEventListener("click", klik1);
+
+const btn2 = document.querySelector(".button2");
+btn2.addEventListener("click", klik2);
+
+const btn3 = document.querySelector(".button3");
+btn3.addEventListener("click", klik3);
+
+const btn4 = document.querySelector(".button4");
+btn4.addEventListener("click", klik4);
+
+const btnAll = document.querySelector(".buttonAll");
+btnAll.addEventListener("click", klikAll);
+
+// Filter functions
+function klik1() {
+  showTheseVehicles(
+    vehicles.filter(function (vehicle) {
+      return vehicle.isElectric;
+    })
+  );
 }
 
-const onlyElec = vehicles.filter(isElec);
-console.log("OnlyElec", onlyElec);
+function klik2() {
+  showTheseVehicles(
+    vehicles.filter(function (vehicle) {
+      return vehicle.passengers === 2;
+    })
+  );
+}
 
-showTheseVehicles(onlyElec);
+function klik3() {
+  showTheseVehicles(
+    vehicles.filter(function (vehicle) {
+      return vehicle.ownedBy === "Jonas";
+    })
+  );
+}
 
-//electrics
-const btn1 = document.querySelector("button1");
-btn1.addEventListener("click", klik1);
-function klik1() {}
-//seats
-const btn2 = document.querySelector("button2");
-btn1.addEventListener("click", klik2);
-//jonas
-const btn3 = document.querySelector("button3");
-btn1.addEventListener("click", klik3);
-//rugbrød
-const btn4 = document.querySelector("button4");
-btn1.addEventListener("click", klik4);
-//alle vehicles
-const btnAll = document.querySelector("buttonAll");
-btn1.addEventListener("click", klikAll);
+function klik4() {
+  showTheseVehicles(
+    vehicles.filter(function (vehicle) {
+      return vehicle.fuel === "Rugbrød";
+    })
+  );
+}
+
+function klikAll() {
+  showTheseVehicles(vehicles);
+}
