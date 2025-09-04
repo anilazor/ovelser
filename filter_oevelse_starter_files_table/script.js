@@ -19,7 +19,7 @@ function showTheseVehicles(arr) {
   arr.forEach((each) => {
     tbodyPointer.innerHTML += `<tr>
       <td>${each.type}</td>
-      <td>${each.fuel ?? "No"}</td>
+      <td>${each.fuel ?? "None"}</td>
       <td>${each.passengers}</td> 
       <td>${each.stops ? each.stops.join(", ") : "None"}</td>
       <td>${each.ownedBy ?? "None"}</td>
