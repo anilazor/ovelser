@@ -1,17 +1,43 @@
-[data-theme="light"] {
-  color: rgb(0, 0, 0);
-  --header-bg-col: rgb(255, 196, 250);
-}
-[data-theme="dark"] {
-  color: rgb(255, 196, 250);
-  --header-bg-col: black;
+@import url("https://fonts.googleapis.com/css2?family=Puppies+Play&display=swap");
+
+.puppies-play-regular {
+  font-family: "Puppies Play", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
-[data-theme="hawaii"] {
-  color: rgb(218, 0, 149);
-  --header-bg-col: rgb(29, 255, 244);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  max-width: 90vw;
+  margin: 0 auto;
 }
 
 header {
-  background-color: var(--header-bg-col);
+  padding: 1rem 2rem 1.5rem 2rem;
+  border: 0.5px solid;
+  position: relative;
+}
+
+h1 {
+  font-family: "Puppies Play";
+  font-size: 5rem;
+  margin-top: 1rem;
+}
+
+select {
+  padding: 0.4rem 0.8rem;
+  border-radius: 0px 0px 0px 10px;
+  box-shadow: inset 1px 4px 10px rgb(255, 255, 255);
+  font-family: arial;
+  font-weight: 100;
+  letter-spacing: 0.5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80px;
 }

@@ -1,0 +1,45 @@
+[data-theme="light"] {
+  --color: rgb(96, 0, 66);
+  --header-bg-col: rgb(255, 196, 250);
+  --body-bg-col: #ffe4fd;
+  --header-border-col: rgb(41, 0, 28);
+  --btn-bg-col: rgb(245, 216, 255);
+  --btn-outline-col: rgb(188, 128, 183);
+  --header-shadow: rgba(255, 255, 255, 0.757);
+}
+[data-theme="dark"] {
+  --color: rgb(255, 196, 250);
+  --header-bg-col: rgb(24, 1, 24);
+  --body-bg-col: rgb(38, 27, 39);
+  --btn-bg-col: rgb(86, 60, 78);
+  --btn-outline-col: rgb(98, 43, 109);
+  --header-border-col: rgb(67, 50, 66);
+  --header-shadow: rgba(49, 7, 37, 0.757);
+}
+
+[data-theme="hawaii"] {
+  --color: rgb(223, 4, 212);
+  --header-bg-col: rgb(29, 255, 244);
+  --body-bg-col: rgb(170, 255, 251);
+  --btn-bg-col: rgb(170, 255, 251);
+  --btn-outline-col: rgb(18, 228, 218);
+  --header-border-col: rgb(0, 111, 105);
+  --header-shadow: rgba(152, 255, 224, 0.757);
+}
+
+header {
+  color: var(--color);
+  background-color: var(--header-bg-col);
+  border-color: var(--header-border-col);
+  box-shadow: inset 10px 20px 60px var(--header-shadow);
+}
+
+body {
+  background-color: var(--body-bg-col);
+}
+
+select {
+  color: var(--color);
+  background-color: var(--btn-bg-col);
+  border: 1px solid var(--btn-outline-col);
+}
