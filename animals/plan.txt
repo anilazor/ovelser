@@ -1,0 +1,16 @@
+Filtering
+- try hardcoded filter - only cats
+- try hardcoded filter - only dogs
+- add user interactivity
+- add the "all"-filter
+
+Sorting
+- try hardcoded sorting - by name
+- try hardcodeed sorting - by type
+- add user interactivity
+- a more generic sort function?
+- change sort direction!
+
+combining filtering AND sorting !
+
+- other fixes after that
